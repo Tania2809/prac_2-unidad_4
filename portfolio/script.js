@@ -1,0 +1,5 @@
+const themeBtn=document.getElementById("themeBtn"),langBtn=document.getElementById("langBtn"),menuBtn=document.getElementById("menuBtn"),navLinks=document.getElementById("navLinks");
+themeBtn.onclick=()=>{document.body.classList.toggle("dark");themeBtn.textContent=document.body.classList.contains("dark")?"☀️":"🌙"};
+menuBtn.onclick=()=>navLinks.classList.toggle("open");
+let lang="es"; langBtn.onclick=()=>{lang=lang==="es"?"en":"es";document.querySelectorAll("[data-es]").forEach(e=>e.textContent=e.dataset[lang]);langBtn.textContent=lang==="es"?"EN":"ES";document.documentElement.lang=lang};
+document.getElementById("contactForm").onsubmit=e=>{e.preventDefault();document.getElementById("formMsg").textContent=lang==="es"?"Mensaje enviado correctamente (demo).":"Message sent successfully (demo).";e.target.reset()};
