@@ -1,152 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title data-es="Café Aurora" data-en="Aurora Café">Café Aurora</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav class="nav container"><a class="logo" href="#inicio">☕ Café Aurora</a><button class="menu-btn" id="menuBtn">☰</button>
-            <div class="links" id="links"><a href="#historia" data-es="Historia" data-en="Story">Historia</a><a href="#menu" data-es="Menú" data-en="Menu">Menú</a><a href="#galeria" data-es="Galería" data-en="Gallery">Galería</a><a href="#promos" data-es="Promociones" data-en="Promotions">Promociones</a>
-                <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
-            </div>
-            <div class="actions"><button id="langBtn">EN</button><button id="themeBtn">🌙</button></div>
-        </nav>
-    </header>
-    <section id="inicio" class="hero">
-        <div class="container">
-            <p data-es="CAFETERÍA ARTESANAL" data-en="ARTISAN CAFÉ">CAFETERÍA ARTESANAL</p>
-            <h1 data-es="Un buen café comienza con un buen momento." data-en="A good coffee begins with a good moment.">Un buen café comienza con un buen momento.</h1><a href="#menu" class="btn" data-es="Ver menú" data-en="View menu">Ver menú</a></div>
-    </section>
-    <section id="historia" class="section container">
-        <h2 data-es="Historia" data-en="Our story">Historia</h2>
-        <p data-es="Café Aurora nació como una cafetería local dedicada a ofrecer café preparado al momento, postres caseros y un espacio tranquilo para estudiar, trabajar o convivir. Su identidad combina un ambiente cálido con productos preparados con atención al detalle."
-            data-en="Café Aurora was created as a local coffee shop dedicated to serving freshly prepared coffee, homemade desserts, and a comfortable space to study, work, or spend time together. Its identity combines a warm atmosphere with carefully prepared products.">Café Aurora nació como una cafetería local dedicada a ofrecer café preparado al momento, postres caseros y un espacio tranquilo para estudiar, trabajar o convivir. Su identidad combina un ambiente cálido con productos preparados con atención al
-            detalle.
-        </p>
-        <div class="mission">
-            <div>
-                <h3 data-es="Misión" data-en="Mission">Misión</h3>
-                <p data-es="Ofrecer bebidas y alimentos de calidad en un ambiente cómodo y cercano." data-en="Provide quality drinks and food in a comfortable and welcoming environment.">Ofrecer bebidas y alimentos de calidad en un ambiente cómodo y cercano.</p>
-            </div>
-            <div>
-                <h3 data-es="Visión" data-en="Vision">Visión</h3>
-                <p data-es="Ser una cafetería reconocida por su servicio, creatividad y experiencia para el cliente." data-en="Be a coffee shop recognized for its service, creativity, and customer experience.">Ser una cafetería reconocida por su servicio, creatividad y experiencia para el cliente.</p>
-            </div>
+<header>
+    <nav class="nav container">
+        <a class="logo" href="#inicio">☕ Café Aurora</a>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="links" id="links">
+            <a href="#historia" data-es="Historia" data-en="Story">Historia</a>
+            <a href="#menu" data-es="Menú" data-en="Menu">Menú</a>
+            <a href="#galeria" data-es="Galería" data-en="Gallery">Galería</a>
+            <a href="#promos" data-es="Promociones" data-en="Promotions">Promociones</a>
+            <a href="#contacto" data-es="Contacto" data-en="Contact">Contacto</a>
         </div>
-    </section>
-    <section id="menu" class="section alt">
-        <div class="container">
-            <h2 data-es="Menú" data-en="Menu">Menú</h2>
-            <div class="products">
-                <article class="product">
-                    <div class="food-photo">Foto 1</div>
-                    <h3 data-es="Espresso" data-en="Espresso">Espresso</h3>
-                    <p data-es="Café intenso preparado al momento." data-en="Strong coffee freshly prepared to order.">Café intenso preparado al momento.</p><strong>$45 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 2</div>
-                    <h3 data-es="Americano" data-en="Americano">Americano</h3>
-                    <p data-es="Espresso con agua caliente." data-en="Espresso with hot water.">Espresso con agua caliente.</p><strong>$45 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 3</div>
-                    <h3 data-es="Cappuccino" data-en="Cappuccino">Cappuccino</h3>
-                    <p data-es="Espresso, leche vaporizada y espuma." data-en="Espresso, steamed milk, and foam.">Espresso, leche vaporizada y espuma.</p><strong>$65 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 4</div>
-                    <h3 data-es="Latte" data-en="Latte">Latte</h3>
-                    <p data-es="Espresso suave con leche cremosa." data-en="Smooth espresso with creamy milk.">Espresso suave con leche cremosa.</p><strong>$68 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 5</div>
-                    <h3 data-es="Mocha" data-en="Mocha">Mocha</h3>
-                    <p data-es="Café, chocolate y leche." data-en="Coffee, chocolate, and milk.">Café, chocolate y leche.</p><strong>$72 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 6</div>
-                    <h3 data-es="Chocolate caliente" data-en="Hot chocolate">Chocolate caliente</h3>
-                    <p data-es="Chocolate con leche y espuma." data-en="Chocolate with milk and foam.">Chocolate con leche y espuma.</p><strong>$65 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 7</div>
-                    <h3 data-es="Té chai" data-en="Chai tea">Té chai</h3>
-                    <p data-es="Bebida especiada con leche." data-en="Spiced tea drink with milk.">Bebida especiada con leche.</p><strong>$68 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 8</div>
-                    <h3 data-es="Té verde" data-en="Green tea">Té verde</h3>
-                    <p data-es="Infusión ligera y aromática." data-en="Light and aromatic infusion.">Infusión ligera y aromática.</p><strong>$48 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 9</div>
-                    <h3 data-es="Frappé de café" data-en="Coffee frappé">Frappé de café</h3>
-                    <p data-es="Café frío con hielo y crema." data-en="Iced coffee with ice and cream.">Café frío con hielo y crema.</p><strong>$78 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 10</div>
-                    <h3 data-es="Limonada" data-en="Lemonade">Limonada</h3>
-                    <p data-es="Limonada natural refrescante." data-en="Refreshing natural lemonade.">Limonada natural refrescante.</p><strong>$55 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 11</div>
-                    <h3 data-es="Cheesecake" data-en="Cheesecake">Cheesecake</h3>
-                    <p data-es="Rebanada cremosa de cheesecake." data-en="Creamy slice of cheesecake.">Rebanada cremosa de cheesecake.</p><strong>$75 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 12</div>
-                    <h3 data-es="Brownie" data-en="Brownie">Brownie</h3>
-                    <p data-es="Brownie de chocolate." data-en="Chocolate brownie.">Brownie de chocolate.</p><strong>$55 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 13</div>
-                    <h3 data-es="Croissant" data-en="Croissant">Croissant</h3>
-                    <p data-es="Croissant horneado y mantequilloso." data-en="Buttery baked croissant.">Croissant horneado y mantequilloso.</p><strong>$52 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 14</div>
-                    <h3 data-es="Galletas de avena" data-en="Oatmeal cookies">Galletas de avena</h3>
-                    <p data-es="Galletas caseras de avena." data-en="Homemade oatmeal cookies.">Galletas caseras de avena.</p><strong>$42 MXN</strong></article>
-                <article class="product">
-                    <div class="food-photo">Foto 15</div>
-                    <h3 data-es="Sándwich Aurora" data-en="Aurora sandwich">Sándwich Aurora</h3>
-                    <p data-es="Pan artesanal, queso, jamón y vegetales." data-en="Artisan bread, cheese, ham, and vegetables.">Pan artesanal, queso, jamón y vegetales.</p><strong>$85 MXN</strong></article>
-            </div>
-        </div>
-    </section>
-    <section id="galeria" class="section container">
-        <h2 data-es="Galería" data-en="Gallery">Galería</h2>
-        <p class="note" data-es="Sustituye estas tarjetas por fotografías originales tomadas por ti. La práctica no permite imágenes descargadas de Internet." data-en="Replace these cards with original photographs taken by you. The assignment does not allow images downloaded from the Internet.">Sustituye estas tarjetas por fotografías originales tomadas por ti. La práctica no permite imágenes descargadas de Internet.</p>
-        <div class="gallery">
-            <div class="gallery-item"><img src="images/producto-1.jpg" alt="Fotografía original Espresso"><span data-es="Producto 1" data-en="Product 1">Producto 1</span></div>
-            <div class="gallery-item"><img src="images/producto-2.jpg" alt="Fotografía original Americano"><span data-es="Producto 2" data-en="Product 2">Producto 2</span></div>
-            <div class="gallery-item"><img src="images/producto-3.jpg" alt="Fotografía original Cappuccino"><span data-es="Producto 3" data-en="Product 3">Producto 3</span></div>
-            <div class="gallery-item"><img src="images/producto-4.jpg" alt="Fotografía original Latte"><span data-es="Producto 4" data-en="Product 4">Producto 4</span></div>
-            <div class="gallery-item"><img src="images/producto-5.jpg" alt="Fotografía original Mocha"><span data-es="Producto 5" data-en="Product 5">Producto 5</span></div>
-            <div class="gallery-item"><img src="images/producto-6.jpg" alt="Fotografía original Chocolate caliente"><span data-es="Producto 6" data-en="Product 6">Producto 6</span></div>
-        </div>
-    </section>
-    <section id="promos" class="section alt">
-        <div class="container">
-            <h2 data-es="Promociones" data-en="Promotions">Promociones</h2>
-            <div class="promo">
-                <h3 data-es="Combo Aurora" data-en="Aurora Combo">Combo Aurora</h3>
-                <p data-es="Café americano + rebanada de pastel." data-en="Americano coffee + slice of cake.">Café americano + rebanada de pastel.</p><strong>$89 MXN</strong></div>
-            <div class="promo">
-                <h3 data-es="Hora de estudio" data-en="Study hour">Hora de estudio</h3>
-                <p data-es="Segundo café americano al 50% de lunes a viernes de 16:00 a 18:00." data-en="Second Americano coffee 50% off Monday to Friday from 4:00 PM to 6:00 PM.">Segundo café americano al 50% de lunes a viernes de 16:00 a 18:00.</p>
-            </div>
-        </div>
-    </section>
-    <section id="contacto" class="section container">
-        <h2 data-es="Contacto y ubicación" data-en="Contact & location">Contacto y ubicación</h2>
-        <div class="contact-grid">
-            <form id="form"><input required data-placeholder-es="Nombre" data-placeholder-en="Name" placeholder="Nombre"><input required type="email" data-placeholder-es="Correo" data-placeholder-en="Email" placeholder="Correo"><textarea required data-placeholder-es="Mensaje"
-                    data-placeholder-en="Message" placeholder="Mensaje"></textarea><button class="btn" data-es="Enviar" data-en="Send">Enviar</button>
-                <p id="msg"></p>
-            </form>
-            <div>
-                <h3 data-es="Horarios" data-en="Opening hours">Horarios</h3>
-                <p data-es="Lunes a viernes: 7:00–20:00<br>Sábado: 8:00–21:00<br>Domingo: 9:00–18:00" data-en="Monday to Friday: 7:00 AM–8:00 PM<br>Saturday: 8:00 AM–9:00 PM<br>Sunday: 9:00 AM–6:00 PM">Lunes a viernes: 7:00–20:00<br>Sábado: 8:00–21:00<br>Domingo: 9:00–18:00</p>
-                <h3 data-es="Ubicación" data-en="Location">Ubicación</h3><iframe title="Mapa" src="https://www.google.com/maps?q=Piedras%20Negras%20Coahuila&output=embed"></iframe></div>
-        </div>
-    </section>
-    <footer>
-        <p data-es="© 2026 Café Aurora · Sitio académico" data-en="© 2026 Aurora Café · Academic website">© 2026 Café Aurora · Sitio académico</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+        <div class="actions"><button id="langBtn">EN</button><button id="themeBtn">🌙</button></div>
+    </nav>
+</header>
 
+<section id="inicio" class="hero">
+    <div class="container hero-content">
+        <p data-es="CAFETERÍA ARTESANAL" data-en="ARTISAN CAFÉ">CAFETERÍA ARTESANAL</p>
+        <h1 data-es="Un buen café comienza con un buen momento." data-en="A good coffee begins with a good moment.">Un buen café comienza con un buen momento.</h1>
+        <p class="hero-subtitle" data-es="Café, postres y alimentos preparados para disfrutar cada visita." data-en="Coffee, desserts, and food prepared to make every visit special.">Café, postres y alimentos preparados para disfrutar cada visita.</p>
+        <a href="#menu" class="btn" data-es="Ver menú" data-en="View menu">Ver menú</a>
+    </div>
+</section>
+
+<section id="historia" class="section container">
+    <h2 data-es="Historia" data-en="Our story">Historia</h2>
+    <p data-es="Café Aurora nació como una cafetería local dedicada a ofrecer café preparado al momento, postres caseros y un espacio tranquilo para estudiar, trabajar o convivir. Su identidad combina un ambiente cálido con productos preparados con atención al detalle."
+       data-en="Café Aurora was created as a local coffee shop dedicated to serving freshly prepared coffee, homemade desserts, and a comfortable space to study, work, or spend time together. Its identity combines a warm atmosphere with carefully prepared products.">Café Aurora nació como una cafetería local dedicada a ofrecer café preparado al momento, postres caseros y un espacio tranquilo para estudiar, trabajar o convivir. Su identidad combina un ambiente cálido con productos preparados con atención al detalle.</p>
+    <div class="mission">
+        <div><h3 data-es="Misión" data-en="Mission">Misión</h3><p data-es="Ofrecer bebidas y alimentos de calidad en un ambiente cómodo y cercano." data-en="Provide quality drinks and food in a comfortable and welcoming environment.">Ofrecer bebidas y alimentos de calidad en un ambiente cómodo y cercano.</p></div>
+        <div><h3 data-es="Visión" data-en="Vision">Visión</h3><p data-es="Ser una cafetería reconocida por su servicio, creatividad y experiencia para el cliente." data-en="Be a coffee shop recognized for its service, creativity, and customer experience.">Ser una cafetería reconocida por su servicio, creatividad y experiencia para el cliente.</p></div>
+    </div>
+</section>
+
+<section id="lugar" class="section place-section">
+    <div class="container place-grid">
+        <div><img class="place-photo" src="images/lugar-cafeteria.svg" alt="Interior de Café Aurora"><span class="image-credit" data-es="Imagen ilustrativa creada para el proyecto." data-en="Illustrative image created for the project.">Imagen ilustrativa creada para el proyecto.</span></div>
+        <div class="place-copy">
+            <p class="eyebrow" data-es="NUESTRO ESPACIO" data-en="OUR SPACE">NUESTRO ESPACIO</p>
+            <h2 data-es="Un lugar para quedarte un rato más" data-en="A place to stay a little longer">Un lugar para quedarte un rato más</h2>
+            <p data-es="Un ambiente cálido, mesas cómodas y una barra de café pensada para disfrutar una bebida, compartir un postre o concentrarte en tus actividades." data-en="A warm atmosphere, comfortable tables, and a coffee bar designed for enjoying a drink, sharing dessert, or focusing on your activities.">Un ambiente cálido, mesas cómodas y una barra de café pensada para disfrutar una bebida, compartir un postre o concentrarte en tus actividades.</p>
+        </div>
+    </div>
+</section>
+
+<section id="menu" class="section alt">
+    <div class="container">
+        <div class="section-heading"><div><p class="eyebrow" data-es="PARA TODOS LOS GUSTOS" data-en="FOR EVERY TASTE">PARA TODOS LOS GUSTOS</p><h2 data-es="Menú" data-en="Menu">Menú</h2></div><p class="menu-intro" data-es="Elige tu bebida, postre o alimento favorito." data-en="Choose your favorite drink, dessert, or meal.">Elige tu bebida, postre o alimento favorito.</p></div>
+        <div class="products">
+            <article class="product"><div class="food-photo"><img src="images/producto-1.svg" alt="Espresso"></div><h3 data-es="Espresso" data-en="Espresso">Espresso</h3><p data-es="Café intenso preparado al momento." data-en="Strong coffee freshly prepared to order.">Café intenso preparado al momento.</p><strong>$45 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-2.svg" alt="Americano"></div><h3 data-es="Americano" data-en="Americano">Americano</h3><p data-es="Espresso acompañado de agua caliente." data-en="Espresso served with hot water.">Espresso acompañado de agua caliente.</p><strong>$45 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-3.svg" alt="Cappuccino"></div><h3 data-es="Cappuccino" data-en="Cappuccino">Cappuccino</h3><p data-es="Espresso con leche vaporizada y espuma." data-en="Espresso with steamed milk and foam.">Espresso con leche vaporizada y espuma.</p><strong>$65 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-4.svg" alt="Latte"></div><h3 data-es="Latte" data-en="Latte">Latte</h3><p data-es="Espresso suave con leche cremosa." data-en="Smooth espresso with creamy milk.">Espresso suave con leche cremosa.</p><strong>$68 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-5.svg" alt="Mocha"></div><h3 data-es="Mocha" data-en="Mocha">Mocha</h3><p data-es="Café combinado con chocolate y leche." data-en="Coffee combined with chocolate and milk.">Café combinado con chocolate y leche.</p><strong>$72 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-6.svg" alt="Frappé de café"></div><h3 data-es="Frappé de café" data-en="Coffee frappé">Frappé de café</h3><p data-es="Café frío preparado con hielo y crema." data-en="Cold coffee prepared with ice and cream.">Café frío preparado con hielo y crema.</p><strong>$78 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-7.svg" alt="Té Chai"></div><h3 data-es="Té Chai" data-en="Chai tea">Té Chai</h3><p data-es="Bebida especiada preparada con leche." data-en="Spiced drink prepared with milk.">Bebida especiada preparada con leche.</p><strong>$68 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-8.svg" alt="Chocolate caliente"></div><h3 data-es="Chocolate caliente" data-en="Hot chocolate">Chocolate caliente</h3><p data-es="Chocolate caliente con leche y espuma." data-en="Hot chocolate with milk and foam.">Chocolate caliente con leche y espuma.</p><strong>$65 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-9.svg" alt="Croissant"></div><h3 data-es="Croissant" data-en="Croissant">Croissant</h3><p data-es="Croissant horneado de textura suave y mantequillosa." data-en="Baked croissant with a soft, buttery texture.">Croissant horneado de textura suave y mantequillosa.</p><strong>$52 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-10.svg" alt="Muffin"></div><h3 data-es="Muffin" data-en="Muffin">Muffin</h3><p data-es="Muffin horneado, ideal para acompañar el café." data-en="Baked muffin, perfect with coffee.">Muffin horneado, ideal para acompañar el café.</p><strong>$50 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-11.svg" alt="Cheesecake"></div><h3 data-es="Cheesecake" data-en="Cheesecake">Cheesecake</h3><p data-es="Rebanada cremosa de cheesecake con frutos rojos." data-en="Creamy cheesecake slice with berries.">Rebanada cremosa de cheesecake con frutos rojos.</p><strong>$75 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-12.svg" alt="Brownie"></div><h3 data-es="Brownie" data-en="Brownie">Brownie</h3><p data-es="Brownie de chocolate con textura suave." data-en="Chocolate brownie with a soft texture.">Brownie de chocolate con textura suave.</p><strong>$55 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-13.svg" alt="Galletas"></div><h3 data-es="Galletas" data-en="Cookies">Galletas</h3><p data-es="Galletas caseras con chispas de chocolate." data-en="Homemade cookies with chocolate chips.">Galletas caseras con chispas de chocolate.</p><strong>$42 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-14.svg" alt="Sándwich Aurora"></div><h3 data-es="Sándwich Aurora" data-en="Aurora sandwich">Sándwich Aurora</h3><p data-es="Pan artesanal con queso, jamón y vegetales." data-en="Artisan bread with cheese, ham, and vegetables.">Pan artesanal con queso, jamón y vegetales.</p><strong>$85 MXN</strong></article>
+            <article class="product"><div class="food-photo"><img src="images/producto-15.svg" alt="Ensalada"></div><h3 data-es="Ensalada" data-en="Salad">Ensalada</h3><p data-es="Ensalada fresca con vegetales y aderezo." data-en="Fresh salad with vegetables and dressing.">Ensalada fresca con vegetales y aderezo.</p><strong>$75 MXN</strong></article>
+        </div>
+    </div>
+</section>
+
+<section id="galeria" class="section container">
+    <h2 data-es="Galería" data-en="Gallery">Galería</h2>
+    <p class="note" data-es="Aquí puedes mostrar fotografías del menú y del ambiente de la cafetería." data-en="Here you can show photos of the menu and the coffee shop atmosphere.">Aquí puedes mostrar fotografías del menú y del ambiente de la cafetería.</p>
+    <div class="gallery">
+        <div class="gallery-item"><img src="images/lugar-cafeteria.svg" alt="Interior de Café Aurora"><span data-es="Nuestro espacio" data-en="Our space">Nuestro espacio</span></div>
+        <div class="gallery-item"><img src="images/producto-4.svg" alt="Latte"><span data-es="Latte" data-en="Latte">Latte</span></div>
+        <div class="gallery-item"><img src="images/producto-9.svg" alt="Croissant"><span data-es="Croissant" data-en="Croissant">Croissant</span></div>
+        <div class="gallery-item"><img src="images/producto-11.svg" alt="Cheesecake"><span data-es="Cheesecake" data-en="Cheesecake">Cheesecake</span></div>
+        <div class="gallery-item"><img src="images/producto-14.svg" alt="Sándwich Aurora"><span data-es="Sándwich Aurora" data-en="Aurora sandwich">Sándwich Aurora</span></div>
+        <div class="gallery-item"><img src="images/producto-15.svg" alt="Ensalada"><span data-es="Ensalada" data-en="Salad">Ensalada</span></div>
+    </div>
+</section>
+
+<section id="promos" class="section alt">
+    <div class="container">
+        <h2 data-es="Promociones" data-en="Promotions">Promociones</h2>
+        <div class="promo"><h3 data-es="Combo Aurora" data-en="Aurora Combo">Combo Aurora</h3><p data-es="Café americano + rebanada de pastel." data-en="Americano coffee + slice of cake.">Café americano + rebanada de pastel.</p><strong>$89 MXN</strong></div>
+        <div class="promo"><h3 data-es="Hora de estudio" data-en="Study hour">Hora de estudio</h3><p data-es="Segundo café americano al 50% de lunes a viernes de 16:00 a 18:00." data-en="Second Americano coffee 50% off Monday to Friday from 4:00 PM to 6:00 PM.">Segundo café americano al 50% de lunes a viernes de 16:00 a 18:00.</p></div>
+    </div>
+</section>
+
+<section id="contacto" class="section container">
+    <h2 data-es="Contacto y ubicación" data-en="Contact & location">Contacto y ubicación</h2>
+    <div class="contact-grid">
+        <form id="form"><input required data-placeholder-es="Nombre" data-placeholder-en="Name" placeholder="Nombre"><input required type="email" data-placeholder-es="Correo" data-placeholder-en="Email" placeholder="Correo"><textarea required data-placeholder-es="Mensaje" data-placeholder-en="Message" placeholder="Mensaje"></textarea><button class="btn" data-es="Enviar" data-en="Send">Enviar</button><p id="msg"></p></form>
+        <div><h3 data-es="Horarios" data-en="Opening hours">Horarios</h3><p data-es="Lunes a viernes: 7:00–20:00<br>Sábado: 8:00–21:00<br>Domingo: 9:00–18:00" data-en="Monday to Friday: 7:00 AM–8:00 PM<br>Saturday: 8:00 AM–9:00 PM<br>Sunday: 9:00 AM–6:00 PM">Lunes a viernes: 7:00–20:00<br>Sábado: 8:00–21:00<br>Domingo: 9:00–18:00</p><h3 data-es="Ubicación" data-en="Location">Ubicación</h3><iframe title="Mapa" src="https://www.google.com/maps?q=Piedras%20Negras%20Coahuila&output=embed"></iframe></div>
+    </div>
+</section>
+<footer><p data-es="© 2026 Café Aurora · Sitio académico" data-en="© 2026 Aurora Café · Academic website">© 2026 Café Aurora · Sitio académico</p></footer>
+<script src="script.js"></script>
+</body>
 </html>
